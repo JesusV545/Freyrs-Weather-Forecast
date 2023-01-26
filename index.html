@@ -3,8 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <script
+      src="https://code.jquery.com/jquery-3.5.1.min.js"
+      integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+      crossorigin="anonymous"
+    ></script>
+  
+    <script src="https://cdn.tailwindcss.com"></script> 
+  <!-- <link rel="stylesheet" href="./assets/css/style.css"> -->
   <title>Freyr's Weather Forecast</title>
 </head>
 
@@ -15,29 +21,29 @@
     
     <main class="flex flex-row space-x-4 space-y-4 h-full container">
 
-        <section class="flex flex-row space-x-4 basis-1/4 h-full">
+        <section class="flex flex-row space-x-4 h-full">
 
             <!--Search bar-->
-            <aside class="flex flex-col space-y-4 grid-rows-3 search-form">
+            <aside class="flex flex-col space-y-4 grid-rows-3 search-form basis-1/2">
                 <h1 class="text-2xl font-bold">Search for a City: </h1>
                 <div>
                     <input class="border-2 rounded-lg" type="text" placeholder="Enter City Name" id="search-value">
-                    <button class="text-lg bg-cyan-600 rounded-lg text-white start-btn">Search</button>
+                    <button class="text-lg bg-cyan-600 rounded-lg text-white" id="start-btn">Search</button>
                 </div>
                 <!--List of searched cities-->
-                <ul class="border-black border-y list-none search-history"></ul>           
+                <ul class="border-black border-y list-none text-center" id="search-history"></ul>           
             </aside>
 
-            <section class="">
+            <section class="flex flex-col">
                 <!--Currently searched city-->
-                <div class="" id="current-weather"></div>
+                <div class="mt-5" id="current-weather"></div>
                 <!--5 day forecast-->
-                <div class="grid-cols-5" id="five-day-forecast"></div>
+                <div class="mt-5" id="five-day-forecast"></div>
             </section>
+
         </section> 
     </main>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="./assets/java/script.js"></script>
     
 </body>
