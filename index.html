@@ -14,21 +14,21 @@
   <title>Freyr's Weather Forecast</title>
 </head>
 
-<body>
+<body class="bg-slate-100">
     <header class="flex justify-center bg-gradient-to-r from-cyan-500 to-blue-500 rounded-lg py-5 text-white text-3xl">
         Freyr's Weather Forecast
     </header>
     
-    <main class="flex flex-row space-x-4 space-y-4 h-full container">
+    <main class="flex flex-row space-x-4 space-y-4 h-full container m-5">
 
         <section class="flex flex-row space-x-4 h-full">
 
             <!--Search bar-->
-            <aside class="flex flex-col space-y-4 grid-rows-3 search-form basis-1/2">
+            <aside class=" flex-col space-y-4 grid-rows-3 search-form basis-1/2 justify-center">
                 <h1 class="text-2xl font-bold">Search for a City: </h1>
-                <div>
-                    <input class="border-2 rounded-lg" type="text" placeholder="Enter City Name" id="search-value">
-                    <button class="text-lg bg-cyan-600 rounded-lg text-white" id="start-btn">Search</button>
+                <div class="flex flex-col justify-center p-2 w-full">
+                    <input class="border-2 rounded-lg  text-center mb-2" type="text" placeholder="Enter City Name" id="search-value">
+                    <button class="text-lg bg-cyan-600 rounded-lg text-white  justify-center" id="start-btn">Search</button>
                 </div>
                 <!--List of searched cities-->
                 <ul class="border-black border-y list-none text-center" id="search-history"></ul>           
